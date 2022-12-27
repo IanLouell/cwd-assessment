@@ -1,0 +1,15 @@
+.main-header {
+    background:url(../1.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.main-header-signup {
+    background:url(../);
+    min-height: 0px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}

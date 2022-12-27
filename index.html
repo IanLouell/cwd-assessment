@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Complied and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>BIKE SHOP</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="main-header">
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" 
+                    class="brand-logo"> IAN'S B-SHOP</a>
+                    <a href="#" data-target="slide-out"
+                    class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        </li>
+                        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">LIST OF ITEMS</a>
+                        </li>
+                        <li><a href="signup.html">SIGN UP</a>
+                        </li>
+                        <li>
+                            <a href="#login" class="btn grey modal-trigger black-text">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--sidenav-->
+    <ul id="slide-out" class="sidenav">
+        </li>
+        <li><a class="dropdown-trigger btn black white-text" href="#" data-target="dropdown">LIST OF ITEMS</a>
+        </li>
+        <li><a href="signup.html" class="btn black white-text">SIGN UP</a>
+        </li>
+        <li>
+            <li>
+                <a href="#login" class="btn black modal-trigger">LOGIN</a>
+            </li>
+        </ul>
+
+        <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">GLOVES</a></li>
+        <li><a href="#!">GLASSES</a></li>
+        <li><a href="#!">CLEATS SHOES</a></li>
+        <li><a href="#!">WATER BOTTLE</a></li>
+        <li><a href="#!">FLASHLIGHT</a></li>
+    </ul>
+
+        <!--another for sidenav-->
+    <ul id="dropdown" class="dropdown-content">
+            <li><a href="#!">GLOVES</a></li>
+            <li><a href="#!">GLASSES</a></li>
+            <li><a href="#!">CLEATS SHOES</a></li>
+            <li><a href="#!">WATER BOTTLE</a></li>
+            <li><a href="#!">FLASHLIGHT</a></li>
+    </ul>
+
+    <!--Section: About-->
+    <section class="section section-about grey lighten-4">
+        <div class="container">
+            <div class="row">
+            <div class="=col s12 m6">
+                <h3 class="grey-text">
+                    <span class="black-text">ABOUT</span>
+                </h3>
+                <p class="flow-text grey-text">I started learning to ride a bike
+                    with my brothers and friends when I was younger, 
+                    around 14 years old, and eventually learned to travel everywhere using bike.
+                    However, since the pandemic began three years ago, 
+                    we had also stopped traveling wherever we were having fun, joining a race or
+                    spending time planning to try the delicious food and breathtaking views. 
+                    When biking stopped, I sidelined a selling of bike parts, clothing, 
+                    and accessories to earn money and because this is also my passion. 
+                    So this portfolio is something I planned as a theme for my presentation 
+                    in the upcoming assessment and will eventually become my own website that 
+                    will be used to increase the number of buyers of my product.</p>
+            </div>
+            <br><br>            
+            <div class="col s12 m12">
+                <img src="myself.jpg" alt=""
+                class="responsive-img materialboxed">
+                </div>                  
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+        <div class="footer-copyright black white-text">
+        <div class="container">
+        © 2022 BikeShop. All rights reserved.
+        <a class="grey-text text-lighten-4 right" 
+        href="#!">Owner: Ian Louell Opina</a>
+        </div>
+        </div>
+    </footer>
+
+    <!--Login modal-->
+    <div id="login" class="modal">
+        <div class="modal-content center">
+            <h4>LOGIN MEMBER ACCOUNT</h4>
+            <p>Claim your voucher and many more!</p>
+            <form action="">
+                <div class="input-field">
+                    <input type="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password">
+                    <label for="password">Password</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="items.html" class="modal-action modal-close btn black">
+                <i class="material-icons left">perm_identity</i>LOGIN
+            </a>
+            <a href="signup.html" class="modal-action modal-close btn black">
+                <i class="material-icons left">person_add</i>SIGN UP
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!--Compiled and miified Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+            $(document).ready(function(){
+                //sidenav init
+    $('.sidenav').sidenav({
+    
+    });
+    // materialbox init
+    $('.materialboxed').materialbox();
+
+    //Modal init
+    $('.modal').modal();
+
+    //Dropdown init
+    $('.dropdown-trigger').dropdown();
+    });
+    
+    </script>
+
+</body>
+</html>
